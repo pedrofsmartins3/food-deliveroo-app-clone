@@ -42,7 +42,7 @@ const RestaurantScreen = () => {
     <>
         <BasketIcon/>
 
-        <ScrollView>
+        <ScrollView className="">
         <View className="relative">
             <Image 
                 source={{
@@ -84,8 +84,8 @@ const RestaurantScreen = () => {
                 </TouchableOpacity>
         </View>
 
-            <View>
-                    <Text className="px-4 pt-6 mb-3 font-bold text-xl">Menu</Text>
+        <View>
+            <Text className="px-4 pt-6 mb-3 font-bold text-xl">Menu</Text>
 
                     {/* Dishrows */}
                     {dishes.map((dish) => (
@@ -98,7 +98,7 @@ const RestaurantScreen = () => {
                         image={dish.image}
                         />
                         ))}
-                </View> 
+        </View> 
         </ScrollView>
     </>
   )
